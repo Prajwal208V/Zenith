@@ -16,9 +16,7 @@
               <li>If x doesn’t match with any of elements, return -1.</li>
             </ul>
       <em>The time complexity of the liner Serach algorithm is O(n).</em>
-  </li>
-  
-  
+    </li>
     <li><b>Binary Search</b></li>
     <li><b>Jump Search</b></li>
     <li><b></b></li>
