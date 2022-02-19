@@ -5,6 +5,7 @@ Subarrays are created, rotated individually and then joined together and reverse
 
 #include <bits/stdc++.h>
 using namespace std;
+
 void reverse(int arr[], int start, int end){
   while(start<end){
     int temp=arr[start];
@@ -14,7 +15,8 @@ void reverse(int arr[], int start, int end){
     end--;
   }
 } 
-  
+
+
 int main()
 {
   //write your code here
@@ -27,6 +29,8 @@ int main()
     for(int i=0;i<n;i++){
       cin>>arr[i];
     }
+    if(k>n)
+      k=k%n;
     reverse(arr, 0, n-k-1);
     reverse(arr, n-k, n-1);
     reverse(arr,0, n-1);
