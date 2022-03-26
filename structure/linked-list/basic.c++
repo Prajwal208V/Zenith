@@ -164,6 +164,43 @@ bool searchFun(struct node * head,int value){
     return false;
 }
 
+//8.reverse the linked list 
+//in two way we can reverse list
+//a.reversing elements it is most expensive in space and time 
+struct node * reverseElements(struct node * head){
+    int n=counter(head);
+    int n2=n-1;
+    int arr2[n];
+    int i=0;
+
+    struct node * temp1 = head, *temp2 = head;
+    while(temp1!=NULL){
+        arr2[i++]= temp1->data;
+        temp1= temp1->next;
+    }
+    
+    while(temp2!=NULL){
+        temp2->data=arr2[n2--];
+        temp2=temp2->next;
+    }
+    
+    return head;
+}
+//b.reversing links using 3 sliding pointers (sliding three pointers and reversing)
+struct node * reverseLink(struct node * head){
+    struct node * first=head,*second=NULL, *third=NULL;
+    while(first!=NULL){       
+        third=second;
+        second=first;
+        first=first->next; // sliding pointers
+        
+        second->next=third;
+    }
+    head=second;
+    return head;
+}
+
+
 int main(){
    struct node *head=NULL;
    head=(creatList(head)); 
@@ -211,6 +248,13 @@ int main(){
      cout<<"element found"<<endl;
    else
      cout<<"element not found"<<endl;
+    
+    //reversing the list 
+    head=reverseElements(head);
+    printList(head);
+
+    head=reverseLink(head);
+    printList(head);
 
    return 0;
 }
