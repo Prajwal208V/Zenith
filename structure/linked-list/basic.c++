@@ -10,7 +10,8 @@ struct node * creatList(struct node * head){
    struct node * newNode, *temp;
 
     for(int i=1; i<=5; i++){
-        newNode=(struct node *)malloc(sizeof(struct node));
+        newNode=(struct node *)malloc(sizeof(struct node)); //this is C syntax
+        //newNode=new node; //this is C++ syntax
 
         if(newNode==NULL)
             return head;
@@ -124,6 +125,45 @@ struct node * nthNode(struct node *head, int n){
     return head;
 }
 
+//5.sum of the values
+int sumFun(struct node * head){
+    int sum=0;
+    while(head->next!=NULL){
+        sum+= head->data;
+        head=head->next;
+    }
+    sum+=head->data;
+    return sum;
+}
+
+//6.max and min in list
+void max_Min(struct node * head,int arr[]){
+    arr[0]=INT_MAX;
+    arr[1]=INT_MIN;
+    while(head->next!=NULL){
+       arr[0]=min(arr[0],head->data);
+       arr[1]=max(arr[1],head->data);
+       head=head->next;
+    }
+    arr[0]=min(arr[0],head->data);
+    arr[1]=max(arr[1],head->data);
+}
+
+//7.searching an element in list 
+bool searchFun(struct node * head,int value){
+
+    while(head->next!=NULL){
+        if(head->data==value)
+           return true;
+        head=head->next;
+    }
+
+    if(head->data==value)
+           return true;
+
+    return false;
+}
+
 int main(){
    struct node *head=NULL;
    head=(creatList(head)); 
@@ -156,6 +196,21 @@ int main(){
    //find nth node
    struct node* NthNode=nthNode(head,3);
    cout<<"nth node: "<<NthNode->data<<endl;
+   
+   //sum of the data in list
+   cout<<"sum of the data in list: "<<sumFun(head)<<endl;
+
+   //max and min 
+   int arr[2];
+   max_Min(head,arr);
+   cout<<"max and min: "<<arr[0]<<" "<<arr[1]<<endl;
+   
+   //searching an element in list 
+   int check=searchFun(head,4);
+   if(check)
+     cout<<"element found"<<endl;
+   else
+     cout<<"element not found"<<endl;
 
    return 0;
 }
