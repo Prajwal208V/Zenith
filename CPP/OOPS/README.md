@@ -8,27 +8,27 @@ https://github.com/navining/gocpp
 |1  | [OOPS](#OOPS) |
 |2  | [Why is OOPs so popular](#what-is-a-prototype-chain)|
 |3  | [advantages of using OOPs](#what-is-the-difference-between-call-apply-and-bind)|
-|2  | [main features of OOPs](#what-is-a-prototype-chain)|
-|2  | [What is a class](#what-is-a-prototype-chain)|
-|2  | [What is an object](#what-is-a-prototype-chain)|
-|2  | [What is encapsulation](#what-is-a-prototype-chain)|
-|4  | [What is Polymorphism](#what-is-json-and-its-common-operations)|
-|5  | [difference between overloading and overriding](#what-is-the-purpose-of-the-array-slice-method)|
-|6  | [What is meant by Inheritance](#what-is-the-purpose-of-the-array-splice-method)|
-|7  | [Explain Inheritance with an example](#what-is-the-difference-between-slice-and-splice)|
-|8  | [Are there any limitations of Inheritance](#how-do-you-compare-object-and-map)|
-|9  | [various types of inheritance](#what-is-the-difference-between--and--operators)|
-|10 | [Abstractions](#what-are-lambda-or-arrow-functions)|
-|11 | [some other programming paradigms other than OOPs](#what-is-a-first-class-function)|
-|12 | [Structured Programming](#what-is-a-first-order-function)|
-|13 | [How much memory does a class occupy](#what-is-a-higher-order-function)|
-|14 | [Is it always necessary to create objects from class](#what-is-a-unary-function)|
-|15 | [What is a constructor](#what-is-the-currying-function)|
-|16 | [various types of constructors in CPP](#what-is-a-pure-function)|
-|16 | [destructor](#what-is-a-pure-function)|
-|17 | [Are class and structure the same If not whats the difference between a class and a structure ](#what-is-the-purpose-of-the-let-keyword)|
-|18 | [What is an exception](#what-is-the-difference-between-let-and-var)|
-|18 | [ What is meant by exception handling](#what-is-the-difference-between-let-and-var)|
+|4  | [main features of OOPs](#what-is-a-prototype-chain)|
+|5  | [What is a class](#what-is-a-prototype-chain)|
+|6  | [What is an object](#what-is-a-prototype-chain)|
+|7  | [What is encapsulation](#what-is-a-prototype-chain)|
+|8  | [What is Polymorphism](#what-is-json-and-its-common-operations)|
+|9  | [difference between overloading and overriding](#what-is-the-purpose-of-the-array-slice-method)|
+|10 | [What is meant by Inheritance](#what-is-the-purpose-of-the-array-splice-method)|
+|11 | [Explain Inheritance with an example](#what-is-the-difference-between-slice-and-splice)|
+|12 | [Are there any limitations of Inheritance](#how-do-you-compare-object-and-map)|
+|13 | [various types of inheritance](#what-is-the-difference-between--and--operators)|
+|14 | [Abstractions](#what-are-lambda-or-arrow-functions)|
+|15 | [some other programming paradigms other than OOPs](#what-is-a-first-class-function)|
+|16 | [Structured Programming](#what-is-a-first-order-function)|
+|17 | [How much memory does a class occupy](#what-is-a-higher-order-function)|
+|18 | [Is it always necessary to create objects from class](#what-is-a-unary-function)|
+|19 | [What is a constructor](#what-is-the-currying-function)|
+|20 | [various types of constructors in CPP](#what-is-a-pure-function)|
+|21 | [destructor](#what-is-a-pure-function)|
+|22 | [Are class and structure the same If not whats the difference between a class and a structure ](#what-is-the-purpose-of-the-let-keyword)|
+|23 | [What is an exception](#what-is-the-difference-between-let-and-var)|
+|24 | [ What is meant by exception handling](#what-is-the-difference-between-let-and-var)|
 
 ### OOPS
 (OOP is a technique to develop logical modules, such as classes that contain properties, methods, fields, and events. An object is created in the program to represent a class. Therefore, an object encapsulates all the features, such as data and behavior that are associated to a class. OOP allows developers to develop modular programs and assemble them as software. Objects are used to access data and behaviors of different software modules, such as classes, namespaces, and sharable assemblies.)
